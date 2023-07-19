@@ -1,0 +1,47 @@
+<main>
+  <header>
+    Wir bauen uns ein <br />
+    <span class="street-sign">Straßenschild</span><br />
+    – nur mit CSS
+  </header>
+
+  <footer>
+    <p>Benjamin Hogl</p>
+    <p><span style="color: #ef7d00">Meetup @ jambit</span> &bull; 19.07.2023</p>
+  </footer>
+</main>
+
+<style>
+  .street-sign {
+    background-color: navy;
+    color: white;
+    padding: 0.25em 0.75em;
+    display: inline-block;
+    font-family: Cambria, serif;
+    font-weight: normal;
+    border: 0.1em solid white;
+    border-image-source: url('data:image/svg+xml;utf8,<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg"><path d="M 20 2 A 3 3 0 0 0 23 5 V 20 A 3 3 0 0 0 20 23 H 5 A 3 3 0 0 0 2 20 V 5 A 3 3 0 0 0 5 2 Z" stroke="white" fill="navy"/></svg>');
+    border-image-slice: 10;
+    border-image-width: 1em;
+  }
+
+  body {
+    font-family: Calibri;
+    font-size: 4vmin;
+    padding: 0;
+  }
+
+  main {
+    align-content: space-evenly;
+    box-sizing: border-box;
+    display: grid;
+    height: 100vh;
+    padding: 1em;
+    text-align: center;
+  }
+
+  header {
+    font-size: 200%;
+    font-weight: bold;
+  }
+</style>

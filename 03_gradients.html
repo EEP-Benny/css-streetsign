@@ -1,0 +1,26 @@
+<span class="street-sign">Königsstraße</span>
+
+<style>
+  .street-sign {
+    color: white;
+    padding: 0.25em 0.75em;
+    display: inline-block;
+    font-family: Cambria, serif;
+    --gradient-background: navy 0.2em, transparent 0.2em;
+    --gradient-circle: navy 0.3em, white 0.3em, white 0.4em, transparent 0.4em;
+    --gradient-line: transparent 0.2em, white 0.2em, white 0.3em, transparent 0.3em;
+    background: linear-gradient(to right, var(--gradient-background)),
+      linear-gradient(to left, var(--gradient-background)), linear-gradient(to top, var(--gradient-background)),
+      linear-gradient(to bottom, var(--gradient-background)),
+      radial-gradient(circle at top 0.2em left 0.2em, var(--gradient-circle)),
+      radial-gradient(circle at top 0.2em right 0.2em, var(--gradient-circle)),
+      radial-gradient(circle at bottom 0.2em right 0.2em, var(--gradient-circle)),
+      radial-gradient(circle at bottom 0.2em left 0.2em, var(--gradient-circle)),
+      linear-gradient(to right, var(--gradient-line)), linear-gradient(to left, var(--gradient-line)),
+      linear-gradient(to top, var(--gradient-line)), linear-gradient(to bottom, var(--gradient-line)), navy;
+  }
+  body {
+    font-size: 50px;
+    background: lightgray;
+  }
+</style>
